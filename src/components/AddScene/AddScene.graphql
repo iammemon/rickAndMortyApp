@@ -1,0 +1,15 @@
+query AddSceneFilterCharacter($name: String) {
+  characters(filter: { name: $name }) {
+    results {
+      ...AddSceneViewCharacter
+    }
+  }
+}
+
+query AddSceneFilterLocation($name: String) {
+  locations(filter: { name: $name }) {
+    results {
+      ...AddSceneViewLocation
+    }
+  }
+}

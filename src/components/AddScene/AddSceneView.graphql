@@ -1,0 +1,12 @@
+fragment AddSceneViewCharacter on Character {
+  id
+  name
+  image
+  status
+}
+
+fragment AddSceneViewLocation on Location {
+  id
+  name
+  type
+}
